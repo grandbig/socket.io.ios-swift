@@ -10,9 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let socket = SocketIOClient(socketURL: "172.20.10.5:3000")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // コネクションの接続
+        self.socket.connect();
     }
 
     override func didReceiveMemoryWarning() {
