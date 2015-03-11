@@ -21,7 +21,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.msgField.delegate = self
         
         // コネクションの接続
-        self.socket.connect();
+        self.socket.connect()
     }
 
     override func didReceiveMemoryWarning() {
